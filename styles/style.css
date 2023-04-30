@@ -666,3 +666,33 @@ header nav ul {
 .ninth_section .buttons .about_us:hover {
     cursor: pointer;
 }
+
+footer {
+    padding: 100px 0 84px 0;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}  
+
+footer img {
+    justify-self: center;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 48px;
+    margin-top: 38px;
+    margin-bottom: 84px;
+}
+
+footer ul li a,
+footer p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #8896AB;
+}
+
+footer ul li:hover {
+    cursor: pointer;
+}

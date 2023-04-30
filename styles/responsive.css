@@ -121,4 +121,8 @@
     .second_section {
         padding: 0 50px 132px 50px;
     }
+
+    footer ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
