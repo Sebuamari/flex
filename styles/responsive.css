@@ -20,6 +20,13 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .fifth_section, .sixth_section {
+        flex-direction: column;
+        padding: 120px 100px;
+    }
+}
+
 @media (max-width: 1100px) {
     .third_section .inner_container {
         column-gap: 20px;
