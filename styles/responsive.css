@@ -10,6 +10,14 @@
     .third_section .inner_container .buttons {
         flex-direction: column;
     }
+
+    .fourth_section {
+        padding: 50px 100px 120px 100px;
+    }
+
+    .grid_item_right {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -44,5 +52,10 @@
 
     .subscribe button {
         width: 100%;
+    }
+
+    .fourth_section .inner_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
     }
 }
