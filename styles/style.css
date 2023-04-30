@@ -1,7 +1,8 @@
 *{
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal !important;
     font-weight: 500;
+    text-align: center !important;
 }
 
 .flex-row {
@@ -13,7 +14,7 @@
 
 .flex-column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -25,6 +26,8 @@ header {
     width: 100vw;
     padding: 24px 88px;
     justify-content: space-between !important;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 header nav ul {
@@ -39,7 +42,8 @@ header nav ul {
 }
 
 .buttons button:hover,
-.nav-link:hover {
+.nav-link:hover,
+.subscribe button:hover {
     cursor: pointer;
 }
 
@@ -59,4 +63,124 @@ header nav ul {
     font-size: 14px;
     line-height: 20px;
     color: #F0FDF4;
+}
+
+.first_section {
+    width: 100vw;
+    padding: 100px 150px 116px 150px;
+}
+
+.first_section_content {
+    background: #2A3342;
+    border-radius: 24px;   
+    padding: 88px 147px;
+    position: relative;
+}
+
+.first_section_content img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.first_section_content img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.first_section_content .inner-container p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #8896AB;
+    margin-bottom: 26px;
+}
+
+.first_section_content .inner-container p:first-child {
+    background: #22C55E;
+    padding: 2px 8px;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 36px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.first_section_content .inner-container p:last-child {
+    font-size: 14px;
+    line-height: 20px;
+    color: #8896AB;
+}
+
+.first_section_content .inner-container h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px; 
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.first_section_content .inner-container .subscribe {
+    margin-bottom: 16px;
+    gap: 16px;
+}
+
+.subscribe .input_container {
+    position: relative;
+    width: 320px;
+}
+
+.input_container i {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.input_container input {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 16px 14px 16px 46px;
+    border: 1px solid #D5DAE1;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+
+.subscribe button {
+    padding: 14px 28px;
+    font-size: 18px;
+    border: none;
+    line-height: 28px;
+    color: #F0FDF4;
+    background: #22C55E;
+    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+    border-radius: 6px;
+}
+
+.first_section .logos_container {
+    padding: 88px 0;
+}
+
+.logos_container h2 {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #BBC3CF;
+}
+
+.first_section .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 60px;
+}
+
+.logos .grid-item {
+    height: 45px;
+    justify-self: center;
 }

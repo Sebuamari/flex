@@ -1,0 +1,36 @@
+@media (max-width: 1430px) {
+    .first_section .logos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header nav ul {
+        flex-direction: column !important;
+        gap: unset;
+    }
+
+    .first_section {
+        padding: 160px 50px 116px 50px;
+    }
+
+    .first_section .logos {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 30px;
+    }
+
+    .first_section_content {
+        padding: 150px 100px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+}
