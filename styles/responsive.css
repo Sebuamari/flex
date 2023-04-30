@@ -26,6 +26,10 @@
         padding: 120px 100px;
     }
 
+    .sixth_section {
+        flex-direction: column-reverse;
+    }
+
     .eigth_section_top {
         flex-direction: column;
         justify-content: center;
@@ -115,6 +119,15 @@
     .ninth_section {
         padding: 210px 100px 88px 100px;
     }
+
+    .tenth_section img { 
+        margin-bottom: 100px;
+    }
+
+    .tenth_section .background {
+        bottom: 50px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -124,5 +137,10 @@
 
     footer ul {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tenth_section .contacts {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 }
