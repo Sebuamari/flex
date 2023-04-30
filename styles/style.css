@@ -43,7 +43,9 @@ header nav ul {
 
 .buttons button:hover,
 .nav-link:hover,
-.subscribe button:hover {
+.subscribe button:hover,
+.fifth_section .inner_right button:hover,
+.sixth_section .inner_right button:hover {
     cursor: pointer;
 }
 
@@ -197,7 +199,9 @@ header nav ul {
     padding: 0 100px;
 }
 
-.inner_top p:first-child {
+.inner_top p:first-child,
+.fifth_section .inner_right p:first-child,
+.sixth_section .inner_right p:first-child {
     background: #DCFCE7;
     box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
     border-radius: 36px;
@@ -209,7 +213,9 @@ header nav ul {
     margin-bottom: 16px;
 }
 
-.inner_top p:last-child {
+.inner_top p:last-child,
+.fifth_section .inner_right p:last-child,
+.sixth_section .inner_right p:last-child {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -218,7 +224,9 @@ header nav ul {
     margin-bottom: 80px;
 }
 
-.inner_top h2 {
+.inner_top h2,
+.fifth_section .inner_right h2,
+.sixth_section .inner_right h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
@@ -311,11 +319,15 @@ header nav ul {
     padding: 14px 28px;
 }
 
-.buttons button {
+.buttons button,
+.fifth_section .inner_right button,
+.sixth_section .inner_right button {
     border-radius: 6px;
 }
 
-.buttons .get_started {
+.buttons .get_started,
+.fifth_section .inner_right button,
+.sixth_section .inner_right button {
     font-size: 18px;
     line-height: 28px;
     color: #F0FDF4;
@@ -344,7 +356,11 @@ header nav ul {
 }
 
 .fourth_section .inner_top p,
-.fourth_section .inner_top h2 {
+.fourth_section .inner_top h2,
+.fifth_section .inner_right p,
+.fifth_section .inner_right h2,
+.sixth_section .inner_right p,
+.sixth_section .inner_right h2 {
     text-align: start !important;
 }
 
@@ -390,4 +406,28 @@ header nav ul {
 .grid_item_left .inner_grid_item p,
 .grid_item_left .inner_grid_item h3 {
     text-align: start !important;
+}
+
+.fifth_section,
+.sixth_section {
+    padding: 120px 180px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.sixth_section {
+    flex-direction: row-reverse;
+}
+
+.sixth_section .inner_right,
+.fifth_section .inner_right {
+    align-items: start !important;
+}
+
+.sixth_section .inner_right button,
+.fifth_section .inner_right button {
+    border: none;
+    margin-top: 25px;
+    padding: 11px 18px;
 }
